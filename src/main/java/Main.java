@@ -192,7 +192,7 @@ public class Trees2 {
 			return true;
         }
         
-        boolean y= q_26(t.hasRight())&&q_26(t.hasLeft())
+        boolean y= q_26(t.hasRight(),x,q)&&q_26(t.hasLeft(),x,q)
         
         if (x==0)
         {
