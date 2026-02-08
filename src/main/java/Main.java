@@ -189,6 +189,7 @@ public class Trees2 {
         if(!t.hasRight()&&!hasLeft())
         {
             q.insert(x);
+			return true;
         }
         
         boolean y= q_26(t.hasRight())&&q_26(t.hasLeft())
