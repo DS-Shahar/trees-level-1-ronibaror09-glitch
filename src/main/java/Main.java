@@ -179,4 +179,44 @@ public class Trees2 {
         }
         return s + sNeg(t.getLeft()) + sNeg(t.getRight());
     }
+    public static boolean q_26(BinNode<Integer> t, int x, Queue<Integer> q)
+    {
+        x++;
+        if((t.hasRight()&&!hasLeft()) ||(!t.hasRight()&&hasLeft()))
+        {
+            return false;
+        }
+        x++;
+        if(!t.hasRight()&&!hasLeft())
+        {
+            q.insert(x);
+        }
+        
+        boolean y= q_26(t.hasRight())&&q_26(t.hasLeft())
+        
+        if (x==0)
+        {
+            if(q_26e(q)&&y)
+            {
+                return true;
+            }
+            return false;
+        }
+        
+	}
+	public static boolean q_26e(Queue<Integer> q)
+    {
+        while (!q.isEmpty())
+        {
+            int c=q.remove();
+            if (!q.isEmpty())
+            {
+                if (c!=q.head())
+                {
+                    return false
+                }
+            }
+        }
+        return true;
+    }
 }
