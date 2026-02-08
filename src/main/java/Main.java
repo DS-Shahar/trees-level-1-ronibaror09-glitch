@@ -186,7 +186,6 @@ public class Trees2 {
         {
             return false;
         }
-        x++;
         if(!t.hasRight()&&!hasLeft())
         {
             q.insert(x);
